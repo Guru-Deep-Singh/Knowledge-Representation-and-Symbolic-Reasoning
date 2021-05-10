@@ -1,5 +1,6 @@
 ﻿# Retail Store Stocking & 	Preparing Delivery Orders
 [Video](https://youtu.be/rZtIMp_JbgM)
+
 This is a project made for the course RO470014 - Knowledge representation and decision making. The project deals with a retail store simulation environment in gazebo. which was provided by the course coordinator. The planning of the project is done using the robot Tiago. The implementation was done using PDDL 2.1 and  ROS Plan. The submission also includes the design of an ontology which was done in protege. The ontology was designed in order to first conceptualize our task and be ale to code them in PDDL. However, a future task could be to merge the ontology and the PDDL plan.
 
 ## Planning Task Description 
