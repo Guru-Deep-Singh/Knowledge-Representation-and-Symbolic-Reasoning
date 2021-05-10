@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+	<rosparam command="load" file="$(find retail_store_planning)/config/waypoints.yaml" />
+	<rosparam command="load" file="$(find retail_store_planning)/config/objects.yaml" />
+
+	<!-- ROSPlan -->
+	<include file="$(find rosplan_planning_system)/launch/interfaced_planning_system.launch" >
+		<arg name="domain_path"		value="$(find retail_store_planning)/pddl_files/domain_move.pddl" />
+		<arg name="problem_path"	value="$(find retail_store_planning)/pddl_files/problem_move.pddl" />
+	</include>
+
+	
+	<!-- move_base action interface -->
+	<node name="rosplan_interface_move_base" pkg="retail_store_planning" type="moveBaseInterface" respawn="false" output="screen">
+		<param name="knowledge_base"		value="rosplan_knowledge_base" />
+		<param name="pddl_action_name"		value="move" />
+		<param name="action_dispatch_topic" value="/rosplan_plan_dispatcher/action_dispatch" />
+		<param name="action_feedback_topic" value="/rosplan_plan_dispatcher/action_feedback" />
+	</node>
+
+</launch>

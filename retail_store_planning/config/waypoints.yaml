@@ -1,0 +1,151 @@
+waypoints:
+  wp0:
+    position:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+  wp_table_1:
+    position:
+      x: -1.12
+      y: 1.20
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707
+    location_aruco:
+     aruco:
+       id:
+        333
+     position:
+       x: -1.103510
+       y: 1.861300
+       z: 0.8155
+     orientation:
+       x: 0.0
+       y: 0.0
+       z: 0.000
+       w: 1.000
+  wp_table_2:
+    position:
+      x: 0.80
+      y: 1.20
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.707
+      w: 0.707
+  wp_table_3:
+    position:
+      x: 1.18
+      y: -0.03
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0 
+      w: 1.0
+  wp_cabinet_1:
+    position:
+      x: 0.48
+      y: -1.24
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+  wp_cabinet_2:
+    position:
+      x: -0.4356
+      y: -1.24
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.707
+      w: 0.707
+    aruco_marker_original_444:
+     aruco:
+       id:
+         444
+     position:
+       x: -0.4995
+       y: -1.9228
+       z: 1.1105
+     orientation:
+       x: 0.0
+       y: 0.0
+       z: 1.000
+       w: 0.000
+    aruco_marker_original_333:
+     aruco:
+       id:
+        333
+     position:
+       x: -0.179853
+       y: -1.911570
+       z: 0.710500
+     orientation:
+       x: 0.0
+       y: 0.0
+       z: 0.000
+       w: 1.000
+    location_aruco:
+     aruco:
+       id:
+        444
+     position:
+       x: -0.4995
+       y: -1.9228
+       z: 0.7105
+     orientation:
+       x: 0.0
+       y: 0.0
+       z: 1.000
+       w: 0.000
+
+  aruco_marker_original_222:
+    aruco:
+      id:
+        222
+    position:
+      x: 0.715521
+      y: -1.9228
+      z: 1.360186
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 1.000
+      w: 0.000
+  aruco_marker_original_111:
+    aruco:
+      id:
+        111
+    position:
+      x: 0.3635
+      y: -1.9409
+      z: 0.8538
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 1.000
+      w: 0.000
+  bin:
+    position:
+      x: -1.192
+      y: 0.29677
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 1.0
+      w: 0.0
+

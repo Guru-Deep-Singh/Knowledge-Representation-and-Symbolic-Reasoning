@@ -1,0 +1,10 @@
+# Goal
+bool use_aruco
+uint32 aruco_id # Specify which aruco id to pick
+geometry_msgs/Pose pose 
+---
+# Result
+bool success 
+---
+# Feedback
+bool running

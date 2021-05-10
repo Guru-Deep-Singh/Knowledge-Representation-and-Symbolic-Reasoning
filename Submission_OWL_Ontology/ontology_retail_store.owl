@@ -1,0 +1,346 @@
+Prefix: : <http://www.semanticweb.org/guru/ontologies/2021/2/untitled-ontology-13#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/guru/ontologies/2021/2/untitled-ontology-13>
+
+
+ObjectProperty: canBe
+
+    Domain: 
+        Robot
+    
+    Range: 
+        RobotWaypoint
+    
+    
+ObjectProperty: hasObjectLocation
+
+    Domain: 
+        Furniture
+    
+    Range: 
+        ObjectLocation
+    
+    
+ObjectProperty: manipulate
+
+    Characteristics: 
+        Functional
+    
+    Domain: 
+        Robot
+    
+    Range: 
+        Product
+    
+    
+ObjectProperty: onFurniture
+
+    Domain: 
+        Product
+    
+    Range: 
+        Furniture
+    
+    
+ObjectProperty: pick
+
+    SubPropertyOf: 
+        manipulate
+    
+    Domain: 
+        Robot
+    
+    Range: 
+        Product
+    
+    
+ObjectProperty: place
+
+    SubPropertyOf: 
+        manipulate
+    
+    Domain: 
+        Robot
+    
+    Range: 
+        Product
+    
+    
+ObjectProperty: toBeDelivered
+
+    Domain: 
+        Product
+    
+    Range: 
+        DeliveryTable
+    
+    
+ObjectProperty: toBeStocked
+
+    Domain: 
+        Product
+    
+    Range: 
+        Cabinet
+    
+    
+Class: Abstract
+
+    DisjointWith: 
+        Move, NotMove
+    
+    
+Class: Cabinet
+
+    SubClassOf: 
+        Furniture
+    
+    DisjointWith: 
+        Table
+    
+    
+Class: DeliveryTable
+
+    SubClassOf: 
+        Table
+    
+    DisjointWith: 
+        ItemsToBeDeliveredTable, ItemsToBeStockedTable
+    
+    
+Class: Furniture
+
+    SubClassOf: 
+        NotMove
+    
+    DisjointWith: 
+        Product, Robot
+    
+    
+Class: Hagelslag
+
+    SubClassOf: 
+        Product
+    
+    DisjointWith: 
+        Milk, Yogurt
+    
+    
+Class: ItemsToBeDeliveredTable
+
+    SubClassOf: 
+        Table
+    
+    DisjointWith: 
+        DeliveryTable, ItemsToBeStockedTable
+    
+    
+Class: ItemsToBeStockedTable
+
+    SubClassOf: 
+        Table
+    
+    DisjointWith: 
+        DeliveryTable, ItemsToBeDeliveredTable
+    
+    
+Class: Location
+
+    SubClassOf: 
+        Abstract
+    
+    
+Class: Milk
+
+    SubClassOf: 
+        Product
+    
+    DisjointWith: 
+        Hagelslag, Yogurt
+    
+    
+Class: Move
+
+    DisjointWith: 
+        Abstract, NotMove
+    
+    
+Class: NotMove
+
+    DisjointWith: 
+        Abstract, Move
+    
+    
+Class: ObjectLocation
+
+    SubClassOf: 
+        Location
+    
+    DisjointWith: 
+        RobotWaypoint
+    
+    
+Class: Product
+
+    SubClassOf: 
+        NotMove
+    
+    DisjointWith: 
+        Furniture, Robot
+    
+    
+Class: Robot
+
+    SubClassOf: 
+        Move
+    
+    DisjointWith: 
+        Furniture, Product
+    
+    
+Class: RobotWaypoint
+
+    SubClassOf: 
+        Location
+    
+    DisjointWith: 
+        ObjectLocation
+    
+    
+Class: Table
+
+    SubClassOf: 
+        Furniture
+    
+    DisjointWith: 
+        Cabinet
+    
+    
+Class: Yogurt
+
+    SubClassOf: 
+        Product
+    
+    DisjointWith: 
+        Hagelslag, Milk
+    
+    
+Individual: aruco_cube_111
+
+    Types: 
+        Hagelslag
+    
+    
+Individual: aruco_cube_222
+
+    Types: 
+        Yogurt
+    
+    
+Individual: aruco_cube_333
+
+    Types: 
+        Milk
+    
+    
+Individual: aruco_cube_444
+
+    Types: 
+        Milk
+    
+    
+Individual: aruco_cube_582
+
+    
+Individual: aruco_marker_original_222_0
+
+    Types: 
+        ObjectLocation
+    
+    
+Individual: aruco_marker_original_444_0
+
+    Types: 
+        ObjectLocation
+    
+    
+Individual: cabinet1
+
+    Types: 
+        Cabinet
+    
+    
+Individual: cabinet2
+
+    Types: 
+        Cabinet
+    
+    
+Individual: table1
+
+    Types: 
+        DeliveryTable
+    
+    
+Individual: table2
+
+    Types: 
+        ItemsToBeDeliveredTable
+    
+    
+Individual: table3
+
+    Types: 
+        ItemsToBeStockedTable
+    
+    
+Individual: tiago
+
+    Types: 
+        Robot
+    
+    
+Individual: wp0
+
+    Types: 
+        RobotWaypoint
+    
+    
+Individual: wp_cabinet_1
+
+    Types: 
+        RobotWaypoint
+    
+    
+Individual: wp_cabinet_2
+
+    Types: 
+        RobotWaypoint
+    
+    
+Individual: wp_table_1
+
+    Types: 
+        RobotWaypoint
+    
+    
+Individual: wp_table_2
+
+    Types: 
+        RobotWaypoint
+    
+    
+Individual: wp_table_3
+
+    Types: 
+        RobotWaypoint
+    
+    

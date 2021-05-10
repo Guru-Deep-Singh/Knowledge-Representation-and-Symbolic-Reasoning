@@ -1,0 +1,107 @@
+objects:
+  aruco_cube_111: 
+    aruco:
+      id:
+        111
+    position:
+      x: 0.6282
+      y: 1.8697
+      z: 0.8625
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.214
+      w: 0.977
+    location_aruco:
+     aruco:
+       id:
+        111
+     position:
+       x: -2.085270
+       y: 0.296775
+       z: 0.809420
+     orientation:
+       x: 0.0
+       y: 0.0
+       z: 0.0
+       w: 1.0
+  aruco_cube_222: 
+    aruco:
+      id:
+        222
+    position:
+      x: 0.9525
+      y: 1.8332
+      z: 0.8625
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.058
+      w: 0.998
+    location_aruco:
+     aruco:
+       id:
+        222
+     position:
+       x: -1.103500
+       y: 1.861300
+       z: 0.815504
+     orientation:
+       x: 0.0
+       y: 0.0
+       z: 0.0
+       w: 1.0
+  aruco_cube_333: 
+    aruco:
+      id:
+        333
+    position:
+      x: 1.8583
+      y: 0.2234
+      z: 0.8625
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.166
+      w: 0.986
+  aruco_cube_444: 
+    aruco:
+      id:
+        444
+    position:
+      x: 1.8638
+      y: -0.1001
+      z: 0.8625
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.051
+      w: 0.999
+    location_aruco:
+     aruco:
+       id:
+        444
+     position:
+       x: -0.4995
+       y: -1.9228
+       z: 0.7105
+     orientation:
+       x: 0.0
+       y: 0.0
+       z: 1.000
+       w: 0.000
+  aruco_cube_582:
+    aruco:
+      id:
+        582
+    position:
+      x: -1.1372
+      y: 1.8505
+      z: 0.8625
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.595
+      w: 0.804
+
+
